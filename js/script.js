@@ -7,7 +7,7 @@ const videos = [
   },
   {
     title: "Lagu Populer",
-    file: "https://www.veed.io/view/615f38d2-b111-407c-b330-a269a4f9d570?panel=share",
+    file: "https://www.veed.io/view/615f38d2-b111-407c-b330-a269a4f9d570",
     thumbnail: "assets/videos/thumb2.jpg",
     kategori: "musik"
   },
