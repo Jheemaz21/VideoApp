@@ -27,7 +27,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # Folder public HTML kamu
+          path: './'  # Folder public HTML kamu
 
       - name: Deploy ke GitHub Pages
         uses: actions/deploy-pages@v4
