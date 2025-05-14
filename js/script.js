@@ -1,7 +1,7 @@
 const videos = [
   {
     title: "Film Seru",
-    file: "assets/videos/video1.mp4",
+    file: "https://github.com/Jheemaz21/VideoApp/raw/refs/heads/main/assets/videos/video1.mp4",
     thumbnail: "assets/videos/thumb1.jpg",
     kategori: "film"
   },
