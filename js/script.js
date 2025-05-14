@@ -7,7 +7,7 @@ const videos = [
   },
   {
     title: "Lagu Populer",
-    file: "assets/videos/video2.mp4",
+    file: "https://www.youtube.com/watch?v=kUBw7lSDILg&t=1914s",
     thumbnail: "assets/videos/thumb2.jpg",
     kategori: "musik"
   },
