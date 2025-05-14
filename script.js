@@ -30,6 +30,40 @@ function renderCategoryButtons() {
     });
 }
 
+// fitur upload
+document.getElementById('uploadForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const videoFile = document.getElementById('videoFile').files[0];
+  
+  if (videoFile) {
+    const formData = new FormData();
+    formData.append('video', videoFile);
+
+    // Kirim data video ke server
+    fetch('upload_video.php', {
+      method: 'POST',
+      body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert('Video uploaded successfully!');
+        // Kamu bisa redirect atau memberikan pesan sukses
+      } else {
+        alert('Upload failed!');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('There was an error uploading your video.');
+    });
+  } else {
+    alert('Please select a video to upload.');
+  }
+});
+
+
 function renderVideos() {
     container.innerHTML = '';
 
